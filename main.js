@@ -1,38 +1,3 @@
-// let body = document.querySelector("body")
-
-// const partInsideViewport = (el) => {
-//     const bounding = el.getBoundingClientRect();
-
-//     if (
-//         bounding.top < window.innerHeight 
-//         && bounding.top > -bounding.height 
-//         && bounding.left < window.innerWidth 
-//         && bounding.left > -bounding.width
-//     ) {
-//         console.log("Yes, part of the element is inside the viewport");
-//         // body.style.background = "white"
-//         return true
-//     } else {
-//         console.log("No, part of the element is NOT inside the viewport");
-//         return false
-//     }
-// };
-
-// let section2 = document.getElementById("section2");
-// partInsideViewport(section2)
-
-// gsap.to("body", {
-//     background: "white",
-//     scrollTrigger:{
-//         trigger: "#section2",
-//         scroller: "body",
-//         markers: true,
-//         start: "top 100%",
-//         // end: "top 1px",
-//         // scrub: 0
-//     }
-// })
-
 const sections = document.querySelectorAll("section")
 const body = document.querySelector("body")
 const observer = new IntersectionObserver(function (entries, observer) {

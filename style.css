@@ -15,8 +15,12 @@ body{
 }
 
 header{
-    margin: 14px;
+    margin: 20px 0 0 18px;
     position: fixed;
+}
+
+header img{
+    width: 260px;
 }
 section{
     scroll-snap-align: start;
@@ -26,12 +30,11 @@ section{
     align-items: center;
     height: 100vh;
     justify-content: center;
-    /* margin-top: 32px; */
+    width: 100%;
 }
 
 section > img{
     width: 420px;
-    
 }
 
 section > a{
@@ -74,6 +77,61 @@ p > a{
     right: 14px;
 }
 
-@media screen {
-    
+@media screen and (max-width: 1000px){
+    header{
+        position: static;
+    }
+
+    html{
+        scroll-snap-type: none;
+        
+    }
+
+    section{
+        align-items: center;
+        justify-content: center;
+    }
+
+    .description{
+        position: static;
+        margin: 0px 0 18px 18px;
+    }
+
+    footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        margin-bottom: 10px;
+    }
+
+    .contact{
+        position: static;
+        margin: 0px 0 18px 18px;
+        
+    }
+}
+
+@media screen and (max-width: 770px){
+    header img{
+        width: 160px;
+    }
+
+    section img{
+        width: 80%;
+        max-width: 420px;
+    }
+
+    footer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .description{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .contact{
+        margin-bottom: 50px;
+    }
 }
