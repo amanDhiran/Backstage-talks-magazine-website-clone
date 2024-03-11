@@ -1,7 +1,12 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
+    font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-style: normal;
 }
 
 html{
@@ -37,11 +42,29 @@ section > img{
     width: 420px;
 }
 
+section > h3{
+    font-weight: bold;
+}
+
 section > a{
     margin-top: 29px;
     text-decoration: none;
     color: white;
     font-weight: 600;
+}
+
+section > span{
+    font-size: 14px;
+}
+
+.store-link{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+.white-cover{
+    color: #ff608c;
 }
 
 .description{
@@ -51,7 +74,7 @@ section > a{
     color: black;
     margin-bottom: 30px;
     position: fixed;
-    bottom: 0px;
+    bottom: -1px;
     left: 22px;
     line-height: 25px;
 }
@@ -63,10 +86,12 @@ section > a{
 
 span > a{
     color: black;
+    font-weight: normal;
 }
 
 p > a{
     color: black;
+    font-weight: bold;
 }
 
 .contact{
